@@ -11,7 +11,7 @@ body {
   height: 100%;
   background: linear-gradient(180deg, #00427e 0%, #497aa2 100%);
   
- 
+  
 }
 @keyframes AnimationName {
   0%{background-position:51% 0%}
@@ -33,7 +33,7 @@ a{
   background-clip:text;
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 15%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 
@@ -45,25 +45,25 @@ a{
   color :white;
   position: absolute;
   left: 50%;
-  top: 43%;
+  top: 23%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   font-style: italic;
 }
 .btn{
-  font-size: calc(14px + 0.8vw);
+  font-size: calc(18px + 0.5vw);
   font-weight: 300;
   color :rgb(0, 0, 0);
   position: absolute;
   left: 50%;
-  top: 52%;
+  top: 32%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   background-color: white;
   padding: 6px;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 4px;
+  border-radius: 400px;
   transition: all 0.2s ease-out;
 }
 .btn:hover{
@@ -73,27 +73,39 @@ a{
 }
 .wrapper{
   display: flex;
-  gap: 2vw;
-  font-size: calc(12px + 0.5vw);
+  gap: 1vw;
+  font-size: calc(15px + 0.2vw);
   position: absolute;
-  bottom: 3vh;
+  bottom: 10vh;
   left: 50%;
   transform: translate(-50%);
   color:rgba(253, 253, 253, 0.85);
-  font-size: 18px;
+  text-align: center;
   font-weight: 300;
-
-  
+justify-content: center;
+  flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
   .wrapper{
     flex-direction: column;
+    font-size: calc(18px + 0.5vw);
+    gap: 2vw;
   }
 
 }
 .item{
   transition: all 0.2s ease-out;
-
+width: auto;
+height: auto;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 500px;
+border: 2px solid white;
 }
 .item:hover{
   
