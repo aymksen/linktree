@@ -10,13 +10,26 @@ body {
   margin: 0 auto;
   height: 100%;
   background: linear-gradient(180deg, #00427e 0%, #497aa2 100%);
+  background-attachment: fixed;
 }
 @keyframes AnimationName {
   0%{background-position:51% 0%}
   50%{background-position:50% 100%}
   100%{background-position:51% 0%}
 }
-
+.wrappers{
+  display: flex;
+  font-size: calc(18px + 0.2vw);
+  position: absolute;
+  top: 12vh;
+  left: 50%;
+  transform: translate(-50%);
+  color:rgba(253, 253, 253, 0.85);
+  text-align: center;
+  font-weight: 300;
+  justify-content: center;
+  flex-direction: column;
+}
 .button { 
   transition: all 0.3s;
   position: relative;
@@ -44,10 +57,12 @@ body {
 }
 
 a{
+  text-align: center;
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .name {
   font-size: calc(25px + 2.5vw);
@@ -56,22 +71,19 @@ a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip:text;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -50%);
   white-space: nowrap;
-
+  position: relative;
+  
 }
 
 .desc{
   font-size: calc(15px + 1.4vw);
   font-weight: 200;
   color :white;
-  position: absolute;
-  left: 50%;
-  top: 23%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top:10px;  
   white-space: nowrap;
   font-style: italic;
 }
@@ -79,10 +91,11 @@ a{
   font-size: calc(18px + 0.5vw);
   font-weight: 300;
   color :rgb(0, 0, 0);
-  position: absolute;
-  left: 50%;
-  top: 32%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
+  top:30px;
+  width: 240px;
+  margin: auto;
   white-space: nowrap;
   background-color: white;
   padding: 6px;
@@ -90,6 +103,7 @@ a{
   padding-right: 15px;
   border-radius: 400px;
   transition: all 0.2s ease-out;
+ 
 }
 .btn:hover{
   cursor: pointer;
@@ -100,15 +114,17 @@ a{
   display: flex;
   gap: 1vw;
   font-size: calc(18px + 0.2vw);
-  position: absolute;
-  bottom: 10vh;
+  position: relative;
+  top: 50vh;
+  width: 200px;
   left: 50%;
   transform: translate(-50%);
   color:rgba(253, 253, 253, 0.85);
   text-align: center;
   font-weight: 300;
-justify-content: center;
+  justify-content: center;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
   .wrapper{
