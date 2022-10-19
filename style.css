@@ -9,8 +9,9 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
   height: 100%;
-  background: linear-gradient(180deg, #00427e 0%, #497aa2 100%);
+  background: linear-gradient(45deg, #191883 0%, #1e82d4 100%);
   background-attachment: fixed;
+  
 }
 @keyframes AnimationName {
   0%{background-position:51% 0%}
@@ -44,7 +45,7 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #24467a;
+  background-color: #0a387e;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
@@ -65,9 +66,10 @@ a{
   justify-content: center;
 }
 .name {
+  cursor: default;
   font-size: calc(25px + 2.5vw);
   font-weight: 400;
-  background: -webkit-linear-gradient(0deg,#BA9CFF, #8CFAEC);
+  background: -webkit-linear-gradient(30deg,#00ddc0, #ee96ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip:text;
@@ -77,6 +79,7 @@ a{
 }
 
 .desc{
+  cursor: default;
   font-size: calc(15px + 1.4vw);
   font-weight: 200;
   color :white;
@@ -107,7 +110,7 @@ a{
 }
 .btn:hover{
   cursor: pointer;
-  background-color: #D9F9FB;
+  background-color: #dbe6ff;
   transition: all 0.2s ease-out;
 }
 .wrapper{
